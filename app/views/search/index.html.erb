@@ -1,0 +1,10 @@
+<h1><%= search_results.character_count %> Members</h1>
+<% search_results.characters.each do |character| %>
+  <ul class="character">
+    <li class="name">Name: <%= character.name %></li>
+    <li class="role">Role: <%= character.role %></li>
+    <li class="house">House: <%= character.house %></li>
+    <li class="patronus">Patronus: <%= character.patronus %></li>
+    <li class="phoenix">Phoenix Member? <%= character.phoenix %></li>
+  </ul>
+<% end %>
