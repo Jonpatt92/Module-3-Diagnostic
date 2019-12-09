@@ -1,7 +1,7 @@
 class PotterService
   def get_house_characters(house)
-      response = fetch_data("/v1/characters?house=#{house}")
-      parse_data(response)[:results]
+      response = fetch_data("/v1/characters?house=#{house}&key=#{ENV['POTTER_API_KEY']}")
+      parse_data(response)
   end
 
   private
