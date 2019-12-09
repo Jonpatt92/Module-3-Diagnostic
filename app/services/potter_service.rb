@@ -1,0 +1,3 @@
+class PotterService
+
+end
