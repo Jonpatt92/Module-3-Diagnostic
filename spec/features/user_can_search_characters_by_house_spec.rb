@@ -20,7 +20,6 @@ RSpec.describe "user can search for house characters" do
         expect(page).to have_css(".role")
         expect(page).to have_css(".house")
         expect(page).to have_css(".patronus")
-        expect(page).to have_css(".phoenix")
       end
     end
   end

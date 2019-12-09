@@ -5,6 +5,8 @@
     <li class="role">Role: <%= character.role %></li>
     <li class="house">House: <%= character.house %></li>
     <li class="patronus">Patronus: <%= character.patronus %></li>
-    <li class="phoenix">Phoenix Member? <%= character.phoenix %></li>
+    <% if character.phoenix %>
+      <li class="phoenix">Member of the Order of the Phoenix</li>
+    <% end %>
   </ul>
 <% end %>
