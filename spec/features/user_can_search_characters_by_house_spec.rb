@@ -15,12 +15,10 @@ RSpec.describe "user can search for house characters" do
 
       expect(page).to have_css(".character", count: 41)
 
-      within(first(".character")) do
-        expect(page).to have_css(".name")
-        expect(page).to have_css(".role")
-        expect(page).to have_css(".house")
-        expect(page).to have_css(".patronus")
-      end
+      expect(page).to have_css(".name")
+      expect(page).to have_css(".role")
+      expect(page).to have_css(".house")
+      expect(page).to have_css(".patronus")
     end
   end
 end
